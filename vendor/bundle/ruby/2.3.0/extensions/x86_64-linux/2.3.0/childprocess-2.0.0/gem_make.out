@@ -1,0 +1,5 @@
+current directory: /home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/gems/childprocess-2.0.0/ext
+/home/cabox/.rvm/rubies/ruby-2.3.3/bin/ruby mkrf_conf.rb
+
+current directory: /home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/gems/childprocess-2.0.0/ext
+/home/cabox/.rvm/rubies/ruby-2.3.3/bin/ruby -rubygems /home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/gems/rake-12.3.3/exe/rake RUBYARCHDIR=/home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/childprocess-2.0.0 RUBYLIBDIR=/home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/childprocess-2.0.0

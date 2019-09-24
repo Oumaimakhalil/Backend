@@ -1,0 +1,85 @@
+current directory: /home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/gems/duktape-2.3.0.0/ext/duktape
+/home/cabox/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20190924-4353-1u9ki3q.rb extconf.rb
+checking for rb_sym2str()... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/duktape-2.3.0.0/mkmf.log
+
+current directory: /home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/gems/duktape-2.3.0.0/ext/duktape
+make "DESTDIR=" clean
+
+current directory: /home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/gems/duktape-2.3.0.0/ext/duktape
+make "DESTDIR="
+compiling duktape_ext.c
+duktape_ext.c: In function ‘encode_cesu8’:
+duktape_ext.c:111:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   long len = RSTRING_LEN(utf16) / 2;
+   ^
+duktape_ext.c: In function ‘decode_cesu8’:
+duktape_ext.c:135:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     unsigned short code = utf8_to_uv(ptr, &len);
+     ^
+duktape_ext.c:141:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE utf8res = rb_str_conv_enc(res, utf16enc, rb_utf8_encoding());
+   ^
+duktape_ext.c: In function ‘ctx_stack_to_value’:
+duktape_ext.c:172:7: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+       VALUE str = rb_str_new(buf, len);
+       ^
+duktape_ext.c: In function ‘raise_ctx_error’:
+duktape_ext.c:303:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   const char *name = duk_safe_to_string(ctx, -1);
+   ^
+duktape_ext.c:306:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   const char *message = duk_to_string(ctx, -1);
+   ^
+duktape_ext.c: In function ‘ctx_eval_string’:
+duktape_ext.c:329:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE source;
+   ^
+duktape_ext.c:352:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE res = ctx_stack_to_value(state, -1);
+   ^
+duktape_ext.c: In function ‘ctx_exec_string’:
+duktape_ext.c:374:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE source;
+   ^
+duktape_ext.c: In function ‘ctx_get_one_prop’:
+duktape_ext.c:411:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   duk_bool_t exists = duk_get_prop(ctx, -2);
+   ^
+duktape_ext.c: In function ‘ctx_get_nested_prop’:
+duktape_ext.c:432:7: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+       long len = RARRAY_LEN(props);
+       ^
+duktape_ext.c: In function ‘ctx_get_prop’:
+duktape_ext.c:470:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE res = ctx_stack_to_value(state, -1);
+   ^
+duktape_ext.c: In function ‘ctx_call_prop’:
+duktape_ext.c:494:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE prop;
+   ^
+duktape_ext.c:511:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE res = ctx_stack_to_value(state, -1);
+   ^
+In file included from duktape_ext.c:3:0:
+duktape_ext.c: In function ‘ctx_invoke_fatal’:
+duktape.h:515:34: warning: right-hand operand of comma expression has no effect [-Wunused-value]
+  (duk_fatal_raw((ctx), (err_msg)), (duk_ret_t) 0)
+                                  ^
+duktape_ext.c:619:3: note: in expansion of macro ‘duk_fatal’
+   duk_fatal(state->ctx, "induced fatal error");
+   ^
+duktape_ext.c: In function ‘ctx_initialize’:
+duktape_ext.c:660:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   VALUE options;
+   ^
+compiling duktape.c
+linking shared-object duktape_ext.so
+
+current directory: /home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/gems/duktape-2.3.0.0/ext/duktape
+make "DESTDIR=" install
+/usr/bin/install -m 0755 duktape_ext.so ./.gem.20190924-4353-8097b4

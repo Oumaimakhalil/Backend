@@ -1,0 +1,15 @@
+current directory: /home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/gems/bindex-0.8.1/ext/skiptrace
+/home/cabox/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20190924-4353-zey6c4.rb extconf.rb
+creating Makefile
+
+current directory: /home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/cabox/workspace/Backend/vendor/bundle/ruby/2.3.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20190924-4353-1j64qzb/skiptrace/internal
